@@ -16,29 +16,62 @@
 <body class="d-flex flex-column h-100">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-12 bg-warning">
-                <nav class="navbar navbar-collapse">
+            <div class="col-xl-12 bg-light">
+
+                <!-- Barre de navigation -->
+                <nav class="navbar navbar-light bg-light">
+                    <!-- Logo -->
                     <div class="brand col-xl-3 bg-light">Association Francaise des Amateurs de Springer-Spaniel</div>
-                    <div class="searchBar col-xl-3 d-flex justify-content-end">
-                        <label for="searchBar">Rechercher</label>
-                        <input type="text" name="searchBar" id="searchBar">
-                        <button class="btn btn-success btn-sm" type="submit" id="searchBtn" name="searchBtn">Go !</button>
-                    </div>
-                    <div class="loginForm col-xl-6 d-flex justify-content-end">                        
-                            <form action="post" id="loginForm" name="loginForm">
+                    <!-- Fin de logo -->
+
+                    <!-- Champ de recherche -->
+                    <div class="searchBar col-xl-3">
+                        <form class="form-inline" action="post" id="searchBar" name=" searchBar">
+                            <div class="input-group">                               
+                                <input class="form-control" type="search" name="searchBar" id="searchBar"
+                                    placeholder="Rechercher ...">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default btn-success" type="submit" id="searchBtn" name="searchBtn">
+                                        <!-- <i class="glyphicon glyphicon-search"></i> -->
+                                        Go !
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div><!-- Fin champ de recherche -->
+
+                    <!-- Formulaire de login -->
+                    <div class="loginForm col-xl-6">
+                        <form class="form-inline" action="post" id="loginForm" name="loginForm">
+                            <div class="input-group">
                                 <label for="login">Login</label>
-                                <input type="text" name="login">
+                                <input class="form-control" type="text" name="login">
+                                <small id="emailHelp" class="form-text text-muted">Nous ne communiquerons jamais vos
+                                    données à des tiers.</small>
+                            </div>
+                            <div class="input-group">
                                 <label for="password">Mot de passe</label>
-                                <input type="password" id="password" name="password">
-                                <button class="btn btn-sm btn-primary btn-sm" type="submit" id="submitBtn" name="submitBtn">Se connecter</button>
-                            </form>                        
-                    </div>
-                </nav>
+                                <input class="form-control" type="password" id="password" name="password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Se rapeller de moi</label>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-sm btn-primary btn-sm" type="submit" id="submitBtn"
+                                    name="submitBtn">Se connecter</button>
+                            </div>
+                        </form>
+                    </div><!-- Fin formulaire de login -->
+
+                </nav><!-- Fin barre de navigation -->
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xl-2 bg-primary colGauche">
+            <!-- Debut colonne gauche -->
+            <div class="col-xl-2 colGauche">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus optio, obcaecati dicta
                     reprehenderit, qui facilis aliquid autem, eius natus omnis eos! Neque dignissimos tempore
                     placeat accusamus architecto. Non, mollitia?
@@ -48,8 +81,9 @@
                     Adipisci nihil reiciendis, repudiandae iusto dolorem, amet cupiditate maiores error eligendi
                     quae aliquam maxime id eum labore tempore est excepturi quasi enim modi saepe eius. Magni dolore
                     modi est. Fugit!</p>
-            </div>
-            <div class="col-xl-8 bg-danger centre">
+            </div><!-- Fin colonne gauche -->
+            <!-- Debut colonne centre -->
+            <div class="col-xl-8 colCentre">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id porro ipsam atque facilis cumque.
                     Pariatur placeat perferendis voluptate cumque eligendi porro, nisi doloribus. Rem voluptatum
                     ullam exercitationem officiis iusto asperiores!
@@ -69,9 +103,9 @@
                     tenetur. Rem obcaecati praesentium, ab quas soluta culpa incidunt, labore quos autem vitae,
                     officia neque. Quas!
                 </p>
-            </div>
-
-            <div class="col-xl-2 bg-success colDroite">
+            </div><!-- Fin colonne centre -->
+            <!-- Début colonne droite -->
+            <div class="col-xl-2 colDroite">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus optio, obcaecati dicta
                     reprehenderit, qui facilis aliquid autem, eius natus omnis eos! Neque dignissimos tempore
                     placeat
@@ -85,49 +119,51 @@
                     aliquam maxime id eum labore tempore est excepturi quasi enim modi saepe eius. Magni dolore modi
                     est. Fugit!
                 </p>
-            </div>
+            </div><!-- Fin colonne droite -->
 
-            <footer class="footer mt-auto py-3 bg-primary">
-                <div class="container">
-                    <!-- <div class="row"> -->
-                    <div class="col-xl-3">
-                        <ul>
-                            <li>Nous contacter</li>
-                            <li>Nos ambitions</li>
-                            <li>Nos engagements</li>
-                            <li>Nos partenaires</li>
-                        </ul>
+            <!-- Début footer -->
+            <footer class="footer mt-auto py-3 bg-light">
+                <div class="container d-flex justify-content-center">
+                    <div class="row center-text">
+                        <div class="col-xl-3">
+                            <ul>
+                                <li>Nous contacter</li>
+                                <li>Nos ambitions</li>
+                                <li>Nos engagements</li>
+                                <li>Nos partenaires</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3">
+                            <ul>
+                                <li>Nous contacter</li>
+                                <li>Nos ambitions</li>
+                                <li>Nos engagements</li>
+                                <li>Nos partenaires</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3">
+                            <ul>
+                                <li>Nous contacter</li>
+                                <li>Nos ambitions</li>
+                                <li>Nos engagements</li>
+                                <li>Nos partenaires</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3">
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>Twitter</li>
+                                <li>Pinterest</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-center">Copyright 2022</p>
+                        </div>
                     </div>
-                    <div class="col-xl-3">
-                        <ul>
-                            <li>Nous contacter</li>
-                            <li>Nos ambitions</li>
-                            <li>Nos engagements</li>
-                            <li>Nos partenaires</li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-3">
-                        <ul>
-                            <li>Nous contacter</li>
-                            <li>Nos ambitions</li>
-                            <li>Nos engagements</li>
-                            <li>Nos partenaires</li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-3">
-                        <ul>
-                            <li>Nous contacter</li>
-                            <li>Nos ambitions</li>
-                            <li>Nos engagements</li>
-                            <li>Nos partenaires</li>
-                        </ul>
-                    </div>
-                    <p>Copyright 2022</p>
-                    <!-- </div>                     -->
-                </div>
-            </footer>
+            </footer><!-- Fin footer -->
 
-        </div>
+        </div><!-- Fin container principal -->
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
