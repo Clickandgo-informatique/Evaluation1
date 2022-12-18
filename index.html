@@ -16,62 +16,60 @@
 <body class="d-flex flex-column h-100">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-12 bg-light">
+            <div class="col-xl-12">
+                <header class="header">
+                    <!-- Barre de navigation -->
+                    <nav class="navbar navbar-extend-lg header-nav fixed-top navbar-light bg-light">
+                        <!-- Logo -->
+                        <div class="col-xl-3">
+                            <a class="navbar-brand bg-light" href="#">Association Francaise des Amateurs de
+                                Springer-Spaniel</a>
+                        </div>
+                        <!-- Fin de logo -->
 
-                <!-- Barre de navigation -->
-                <nav class="navbar navbar-light bg-light">
-                    <!-- Logo -->
-                    <div class="brand col-xl-3 bg-light">Association Francaise des Amateurs de Springer-Spaniel</div>
-                    <!-- Fin de logo -->
-
-                    <!-- Champ de recherche -->
-                    <div class="searchBar col-xl-3">
-                        <form class="form-inline" action="post" id="searchBar" name=" searchBar">
-                            <div class="input-group">                               
-                                <input class="form-control" type="search" name="searchBar" id="searchBar"
-                                    placeholder="Rechercher ...">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default btn-success" type="submit" id="searchBtn" name="searchBtn">
-                                        <!-- <i class="glyphicon glyphicon-search"></i> -->
-                                        Go !
-                                    </button>
+                        <!-- Champ de recherche -->
+                        <div class="searchBar col-xl-3">
+                            <form class="form-inline" action="post" id="searchBar" name=" searchBar">
+                                <div class="input-group">
+                                    <input class="form-control" type="search" name="searchBar" id="searchBar"
+                                        placeholder="Rechercher ...">
+                                    <button class="btn btn-success btn-sm" type="submit" id="searchBtn" name="searchBtn">Go
+                                        !</button>
                                 </div>
-                            </div>
+                            </form>
+                        </div><!-- Fin champ de recherche -->
 
-                        </form>
-                    </div><!-- Fin champ de recherche -->
+                        <!-- Formulaire de login -->
+                        <div class="loginForm col-xl-6">
+                            <form class="form-inline" action="post" id="loginForm" name="loginForm">
+                                <div class="input-group">
+                                    <label for="login">Login</label>
+                                    <input class="form-control" type="text" name="login">
 
-                    <!-- Formulaire de login -->
-                    <div class="loginForm col-xl-6">
-                        <form class="form-inline" action="post" id="loginForm" name="loginForm">
-                            <div class="input-group">
-                                <label for="login">Login</label>
-                                <input class="form-control" type="text" name="login">
-                                <small id="emailHelp" class="form-text text-muted">Nous ne communiquerons jamais vos
-                                    données à des tiers.</small>
-                            </div>
-                            <div class="input-group">
-                                <label for="password">Mot de passe</label>
-                                <input class="form-control" type="password" id="password" name="password">
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Se rapeller de moi</label>
-                            </div>
-                            <div class="input-group-append">
-                                <button class="btn btn-sm btn-primary btn-sm" type="submit" id="submitBtn"
-                                    name="submitBtn">Se connecter</button>
-                            </div>
-                        </form>
-                    </div><!-- Fin formulaire de login -->
+                                    <label for="password">Mot de passe</label>
+                                    <input class="form-control" type="password" id="password" name="password">
+                                    <button class="btn btn-sm btn-primary btn-sm" type="submit" id="submitBtn"
+                                        name="submitBtn">Se connecter</button>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Se rapeller de moi</label>
+                                        <small id="emailHelp" class="form-text text-muted">Nous ne communiquerons jamais vos
+                                            données à des tiers.</small>  
+                                    </div>
+                                <div>
+                                </div>
+                            </form>
+                        </div><!-- Fin formulaire de login -->
 
-                </nav><!-- Fin barre de navigation -->
+                    </nav><!-- Fin barre de navigation -->
+                </header>
             </div>
         </div>
-
         <div class="row">
             <!-- Debut colonne gauche -->
             <div class="col-xl-2 colGauche">
+                <h3>Bienvenue sur le site de notre association</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus optio, obcaecati dicta
                     reprehenderit, qui facilis aliquid autem, eius natus omnis eos! Neque dignissimos tempore
                     placeat accusamus architecto. Non, mollitia?
@@ -84,6 +82,7 @@
             </div><!-- Fin colonne gauche -->
             <!-- Debut colonne centre -->
             <div class="col-xl-8 colCentre">
+                <h3>Comment naviguer sur notre site</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id porro ipsam atque facilis cumque.
                     Pariatur placeat perferendis voluptate cumque eligendi porro, nisi doloribus. Rem voluptatum
                     ullam exercitationem officiis iusto asperiores!
@@ -106,6 +105,7 @@
             </div><!-- Fin colonne centre -->
             <!-- Début colonne droite -->
             <div class="col-xl-2 colDroite">
+                <h3>Quelle est notre ambition ?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus optio, obcaecati dicta
                     reprehenderit, qui facilis aliquid autem, eius natus omnis eos! Neque dignissimos tempore
                     placeat
@@ -169,7 +169,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
         </script>
-
+    </div>
 </body>
 
 </html>
