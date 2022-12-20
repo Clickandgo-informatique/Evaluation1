@@ -1,0 +1,25 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+.container-central{
+    max-width: 1024px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* .password,
+.login{
+    max-width: 200px;
+    min-width: 200px;
+    margin-left:10px;
+} */
+
+.searchBar{
+    max-width:350px;
+    min-width: 300px;
+}

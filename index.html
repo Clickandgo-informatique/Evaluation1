@@ -8,13 +8,16 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Page de styles personnelle -->
+    <link rel="stylesheet" href="css/styles.css">
+    </link>
 
-    <style rel="stylesheet" href="css/styles.css"></style>
     <title>Accueil</title>
+
 </head>
 
-<body class="d-flex flex-column h-100">
-    <div class="container-fluid">
+<body>
+    <div class="container">
         <div class="row">
             <div class="col-xl-12">
                 <header class="header">
@@ -31,144 +34,159 @@
                         <div class="searchBar col-xl-3">
                             <form class="form-inline" action="post" id="searchBar" name=" searchBar">
                                 <div class="input-group">
-                                    <input class="form-control" type="search" name="searchBar" id="searchBar"
-                                        placeholder="Rechercher ...">
-                                    <button class="btn btn-success btn-sm" type="submit" id="searchBtn" name="searchBtn">Go
+                                    <input class="form-control" class="searchBar" type="search" name="searchBar"
+                                        id="searchBar" placeholder="Rechercher ...">
+                                    <button class="btn btn-success btn-sm" type="submit" id="searchBtn"
+                                        name="searchBtn">Go
                                         !</button>
                                 </div>
                             </form>
                         </div><!-- Fin champ de recherche -->
 
                         <!-- Formulaire de login -->
-                        <div class="loginForm col-xl-6">
-                            <form class="form-inline" action="post" id="loginForm" name="loginForm">
-                                <div class="input-group">
-                                    <label for="login">Login</label>
-                                    <input class="form-control" type="text" name="login">
+                        <div class="loginForm col-xl-3">
 
-                                    <label for="password">Mot de passe</label>
-                                    <input class="form-control" type="password" id="password" name="password">
-                                    <button class="btn btn-sm btn-primary btn-sm" type="submit" id="submitBtn"
-                                        name="submitBtn">Se connecter</button>
+                            <form class="form-inline" action="post" id="loginForm" name="loginForm">
+                                <div class="form-group row">
+                                    <div class="col-xs-2">
+                                        <label for="login">Login</label>
+                                        <input class="form-control login" type="text" name="login">
                                     </div>
+
+                                    <div class="col-xs-2">
+                                        <label for="password">Mot de passe</label>
+                                        <input class="form-control password" type="password" id="password"
+                                            name="password">
+                                        <button class="btn btn-sm btn-primary btn-sm" type="submit" id="submitBtn"
+                                            name="submitBtn">Se connecter</button>
+                                    </div>
+
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                         <label class="form-check-label" for="exampleCheck1">Se rapeller de moi</label>
-                                        <small id="emailHelp" class="form-text text-muted">Nous ne communiquerons jamais vos
-                                            données à des tiers.</small>  
+                                        <small id="emailHelp" class="form-text text-muted">(Nous ne communiquerons
+                                            jamais vos données à des tiers.</small>
                                     </div>
-                                <div>
                                 </div>
                             </form>
                         </div><!-- Fin formulaire de login -->
-
                     </nav><!-- Fin barre de navigation -->
                 </header>
             </div>
         </div>
+
         <div class="row">
-            <!-- Debut colonne gauche -->
-            <div class="col-xl-2 colGauche">
-                <h3>Bienvenue sur le site de notre association</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus optio, obcaecati dicta
-                    reprehenderit, qui facilis aliquid autem, eius natus omnis eos! Neque dignissimos tempore
-                    placeat accusamus architecto. Non, mollitia?
-                    Magni minima autem laboriosam aspernatur dicta fugit vitae, ea doloremque aliquam, praesentium
-                    beatae quia perspiciatis enim quo voluptate exercitationem tenetur ipsa labore ad cupiditate
-                    modi blanditiis veniam? Voluptatem, repellendus non?
-                    Adipisci nihil reiciendis, repudiandae iusto dolorem, amet cupiditate maiores error eligendi
-                    quae aliquam maxime id eum labore tempore est excepturi quasi enim modi saepe eius. Magni dolore
-                    modi est. Fugit!</p>
-            </div><!-- Fin colonne gauche -->
-            <!-- Debut colonne centre -->
-            <div class="col-xl-8 colCentre">
-                <h3>Comment naviguer sur notre site</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id porro ipsam atque facilis cumque.
-                    Pariatur placeat perferendis voluptate cumque eligendi porro, nisi doloribus. Rem voluptatum
-                    ullam exercitationem officiis iusto asperiores!
-                    Reprehenderit delectus deleniti atque nobis. Id, ullam? Ullam nihil tempora error fuga maxime
-                    possimus animi suscipit est, corporis quaerat et provident! A vero rerum assumenda libero ipsum
-                    veritatis voluptate tenetur!
-                    Laborum corporis deleniti nam rem expedita? Molestiae soluta molestias, vel rerum minima ratione
-                    quae asperiores vitae! Odio pariatur blanditiis aliquid! Sint non consequatur optio neque porro
-                    ipsa repellat cum rem?
-                    Aspernatur, veritatis similique quisquam voluptas fugiat voluptatum non animi iste impedit.
-                    Cupiditate dolor pariatur molestiae repellat nesciunt facilis, libero accusantium consequatur
-                    neque ea numquam nostrum, dolorem blanditiis rem minus dignissimos?
-                    Incidunt fuga alias commodi, a dolor dicta, dolore quaerat quia voluptates porro ipsa deserunt
-                    recusandae earum hic ullam totam in minima. Modi voluptas blanditiis temporibus numquam. Hic
-                    quae minima laborum!
-                    Magni facere labore fugiat ex in aliquam asperiores adipisci, delectus nisi natus rem quo
-                    tenetur. Rem obcaecati praesentium, ab quas soluta culpa incidunt, labore quos autem vitae,
-                    officia neque. Quas!
-                </p>
-            </div><!-- Fin colonne centre -->
-            <!-- Début colonne droite -->
-            <div class="col-xl-2 colDroite">
-                <h3>Quelle est notre ambition ?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus optio, obcaecati dicta
-                    reprehenderit, qui facilis aliquid autem, eius natus omnis eos! Neque dignissimos tempore
-                    placeat
-                    accusamus architecto. Non, mollitia?
-                    Magni minima autem laboriosam aspernatur dicta fugit vitae, ea doloremque aliquam, praesentium
-                    beatae quia perspiciatis enim quo voluptate exercitationem tenetur ipsa labore ad cupiditate
-                    modi
-                    blanditiis veniam? Voluptatem, repellendus non?
-                    Adipisci nihil reiciendis, repudiandae iusto dolorem, amet cupiditate maiores error eligendi
-                    quae
-                    aliquam maxime id eum labore tempore est excepturi quasi enim modi saepe eius. Magni dolore modi
-                    est. Fugit!
-                </p>
-            </div><!-- Fin colonne droite -->
+            <div class="container container-central">
+                <!-- Debut colonne gauche -->
+                <div class="col-xl-3 colGauche">
+                    <h3>Bienvenue sur le site de notre association</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus optio, obcaecati dicta
+                        reprehenderit, qui facilis aliquid autem, eius natus omnis eos! Neque dignissimos tempore
+                        placeat accusamus architecto. Non, mollitia?
+                        Magni minima autem laboriosam aspernatur dicta fugit vitae, ea doloremque aliquam, praesentium
+                        beatae quia perspiciatis enim quo voluptate exercitationem tenetur ipsa labore ad cupiditate
+                        modi blanditiis veniam? Voluptatem, repellendus non?
+                        Adipisci nihil reiciendis, repudiandae iusto dolorem, amet cupiditate maiores error eligendi
+                        quae aliquam maxime id eum labore tempore est excepturi quasi enim modi saepe eius. Magni dolore
+                        modi est. Fugit!</p>
+                </div><!-- Fin colonne gauche -->
+                <!-- Debut colonne centre -->
+                <div class="col-xl-6 colCentre">
+                    <h3>Comment naviguer sur notre site</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id porro ipsam atque facilis cumque.
+                        Pariatur placeat perferendis voluptate cumque eligendi porro, nisi doloribus. Rem voluptatum
+                        ullam exercitationem officiis iusto asperiores!
+                        Reprehenderit delectus deleniti atque nobis. Id, ullam? Ullam nihil tempora error fuga maxime
+                        possimus animi suscipit est, corporis quaerat et provident! A vero rerum assumenda libero ipsum
+                        veritatis voluptate tenetur!
+                        Laborum corporis deleniti nam rem expedita? Molestiae soluta molestias, vel rerum minima ratione
+                        quae asperiores vitae! Odio pariatur blanditiis aliquid! Sint non consequatur optio neque porro
+                        ipsa repellat cum rem?
+                        Aspernatur, veritatis similique quisquam voluptas fugiat voluptatum non animi iste impedit.
+                        Cupiditate dolor pariatur molestiae repellat nesciunt facilis, libero accusantium consequatur
+                        neque ea numquam nostrum, dolorem blanditiis rem minus dignissimos?
+                        Incidunt fuga alias commodi, a dolor dicta, dolore quaerat quia voluptates porro ipsa deserunt
+                        recusandae earum hic ullam totam in minima. Modi voluptas blanditiis temporibus numquam. Hic
+                        quae minima laborum!
+                        Magni facere labore fugiat ex in aliquam asperiores adipisci, delectus nisi natus rem quo
+                        tenetur. Rem obcaecati praesentium, ab quas soluta culpa incidunt, labore quos autem vitae,
+                        officia neque. Quas!
+                    </p>
+                </div><!-- Fin colonne centre -->
+                <!-- Début colonne droite -->
+                <div class="col-xl-3 colDroite">
+                    <h3>Quelle est notre ambition ?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus optio, obcaecati dicta
+                        reprehenderit, qui facilis aliquid autem, eius natus omnis eos! Neque dignissimos tempore
+                        placeat
+                        accusamus architecto. Non, mollitia?
+                        Magni minima autem laboriosam aspernatur dicta fugit vitae, ea doloremque aliquam, praesentium
+                        beatae quia perspiciatis enim quo voluptate exercitationem tenetur ipsa labore ad cupiditate
+                        modi
+                        blanditiis veniam? Voluptatem, repellendus non?
+                        Adipisci nihil reiciendis, repudiandae iusto dolorem, amet cupiditate maiores error eligendi
+                        quae
+                        aliquam maxime id eum labore tempore est excepturi quasi enim modi saepe eius. Magni dolore modi
+                        est. Fugit!
+                    </p>
+                </div><!-- Fin colonne droite -->
+            </div>
+        </div><!-- Fin container central -->
 
-            <!-- Début footer -->
-            <footer class="footer mt-auto py-3 bg-light">
-                <div class="container d-flex justify-content-center">
-                    <div class="row center-text">
-                        <div class="col-xl-3">
-                            <ul>
-                                <li>Nous contacter</li>
-                                <li>Nos ambitions</li>
-                                <li>Nos engagements</li>
-                                <li>Nos partenaires</li>
-                            </ul>
+        <div class="row">
+            <div class="col-xl-12">
+            <div class="container d-flex justify-content-center">
+                    <!-- Début footer -->
+                    <footer class="footer mt-auto py-3 bg-light">
+                        <div class="row center-text">
+                            <div class="col-xl-3">
+                                <ul>
+                                    <li>Nous contacter</li>
+                                    <li>Nos ambitions</li>
+                                    <li>Nos engagements</li>
+                                    <li>Nos partenaires</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3">
+                                <ul>
+                                    <li>Nous contacter</li>
+                                    <li>Nos ambitions</li>
+                                    <li>Nos engagements</li>
+                                    <li>Nos partenaires</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3">
+                                <ul>
+                                    <li>Nous contacter</li>
+                                    <li>Nos ambitions</li>
+                                    <li>Nos engagements</li>
+                                    <li>Nos partenaires</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3">
+                                <ul>
+                                    <li>Facebook</li>
+                                    <li>Instagram</li>
+                                    <li>Twitter</li>
+                                    <li>Pinterest</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="text-center">Copyright 2022</p>
+                            </div>
                         </div>
-                        <div class="col-xl-3">
-                            <ul>
-                                <li>Nous contacter</li>
-                                <li>Nos ambitions</li>
-                                <li>Nos engagements</li>
-                                <li>Nos partenaires</li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-3">
-                            <ul>
-                                <li>Nous contacter</li>
-                                <li>Nos ambitions</li>
-                                <li>Nos engagements</li>
-                                <li>Nos partenaires</li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-3">
-                            <ul>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
-                                <li>Twitter</li>
-                                <li>Pinterest</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="text-center">Copyright 2022</p>
-                        </div>
-                    </div>
-            </footer><!-- Fin footer -->
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer><!-- Fin footer -->
+    </div><!-- Fin container principal -->
 
-        </div><!-- Fin container principal -->
-
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-        </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
     </div>
 </body>
 
