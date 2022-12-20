@@ -1,15 +1,18 @@
-body{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+body {
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container-central{
-    max-width: 1024px;
-    display:flex;
+.container-central {
+    /* max-width: 1024px;
+    max-height: 1024px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 /* .password,
@@ -19,7 +22,35 @@ body{
     margin-left:10px;
 } */
 
-.searchBar{
-    max-width:350px;
+.searchBar {
+    max-width: 350px;
     min-width: 300px;
+}
+
+.colDroite {
+    overflow-y: scroll;
+}
+
+.date-news {
+    text-align: right;
+    color: brown;
+    padding:5px;
+}
+
+.box-news {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    padding: 15px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 1px lightgray;
+}
+
+.link-news {
+    text-decoration: none;
+    text-align: right;
 }
