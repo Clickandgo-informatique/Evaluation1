@@ -12,3 +12,7 @@ body::before{
         width:50%;
     }
 }
+
+#principal,#moderateurs{
+    background-color: rgb(85, 40, 40);
+}
