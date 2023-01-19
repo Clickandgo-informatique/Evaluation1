@@ -1,0 +1,4 @@
+User-agent:Googleboot;
+Disallow: /js/
+Disallow: /img/
+Disallow: /json/

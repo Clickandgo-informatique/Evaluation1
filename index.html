@@ -9,35 +9,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/styles.css">
 
+    <!-- Référencement -->
     <title>Association Francaise des amateurs de Springer-Spaniel</title>
+    <meta type="description"
+        content="Site web de l'association des amateurs du chien de race English-Springer-Spaniel (épagneul écossais)">
+    <meta type="keywords"
+        content="Chien de race anglaise écossaise, English-Springer-Spaniel, chien-police, chien-gendarmerie, chien-guide, chien-de-chasse">
 </head>
 
 <body>
     <!-- Barre de navigation-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand">AFASP</a>
+    <nav class="navbar navbar-expand-lg navbar-dark py-2 fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="col d-flex texte-initiales-logo d-block d-sm-none">
+                <h2 class="d-flex align-items-center text-white h2">AFASP</h2>
+            </div>
+            <div class="col d-flex align-items-center texte-logo d-none d-sm-block">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <h1>
+                        <span class="text-primary">Association Française</span>
+                        <span class="text-white"> des Amateurs de </span>
+                        <span class="text-danger">Springer-Spaniel</span>
+                    </h1>
+                </a>
+            </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button class="navbar-toggler text-white border-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                    <li class="nav-item h6">
+                        <a href="evenements.html" class="nav-link">Evénements</a>
+                    </li>
+                    <li class="nav-item h6">
                         <a href="#principal" class="nav-link">Top page</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item h6">
                         <a href="#essentiel" class="nav-link">Essentiel</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item h6">
                         <a href="#concours" class="nav-link">Concours</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item h6">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item h6">
                         <a href="#moderateurs" class="nav-link">Modérateurs</a>
+                    </li>
+                    <li class="nav-item h6">
+                        <a href="#connexion" class="nav-link" data-bs-toggle="modal"
+                            data-bs-target="#connectionModal">Se connecter</a>
                     </li>
                 </ul>
             </div>
@@ -48,10 +72,11 @@
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
-                    <h1>Devenez <span class="text-warning">membre</span></h1>
+                    <h2>L'AFASP vous souhaite la bienvenue !</h2>
+                    <h2>Devenez <span class="text-warning">membre</span></h2>
                     <p class="lead my-4">En devenant membre vous bénéficierez <br>de beaucoup d'avantages :</p>
-                    <button class="btn btn-primary btn-lg">
-                       Je m'inscris
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#inscriptionModal">
+                        Je m'inscris
                     </button>
                 </div>
                 <img class="img-fluid w-50 mx-5 d-none d-sm-block" src="img/shutterstock-380039059.webp" alt="">
@@ -60,14 +85,15 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="bg-primary text-light p-5">
+    <section class="bg-primary text-light p-3">
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center">
                 <h3 class="mb-3 mb-md-0">Abonnez vous à notre newsletter !</h3>
                 <div class="input-group newsletter">
                     <input type="text" class="form-control" placeholder="Votre mail" aria-label="Votre mail"
                         aria-describedby="button-addon2">
-                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">M'abonner</button>
+                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2" data-bs-toggle="modal"
+                        data-bs-target="#newslettersModal">M'abonner</button>
                 </div>
             </div>
         </div>
@@ -84,12 +110,15 @@
                                 <i class="bi bi-laptop"></i>
                             </div>
                             <h3 class="card-title mb-3">
-                                Virtual
+                                Liens et articles
                             </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta magnam similique modi
-                                totam eaque voluptate?
-                            </p>
+                            <ul>
+                                <li><a href="https://www.centrale-canine.fr/le-chien-de-race/english-springer-spaniel">Centrale
+                                        Canine</a></li>
+                                <li><a href="https://www.woopets.fr/chien/race/springer-anglais/">Woopets</a></li>
+                                <li><a href="https://jardinage.lemonde.fr/dossier-2439-springer-anglais-chien.html">Le
+                                        Monde</a></li>
+                            </ul>
                             <a href="#" class="btn btn-primary">Lire...</a>
                         </div>
                     </div>
@@ -102,13 +131,14 @@
                                 <i class="bi bi-laptop"></i>
                             </div>
                             <h3 class="card-title mb-3">
-                                Virtual
+                                Nos partenaires
                             </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta magnam similique modi
-                                totam
-                                eaque voluptate?
-                            </p>
+                            <ul>
+                                <li><a href="#">Lien Partenaire 1</a></li>
+                                <li><a href="#">Lien Partenaire 2</a></li>
+                                <li><a href="#">Lien Partenaire 3</a></li>
+
+                            </ul>
                             <a href="#" class="btn btn-primary">Lire...</a>
                         </div>
                     </div>
@@ -121,13 +151,13 @@
                                 <i class="bi bi-laptop"></i>
                             </div>
                             <h3 class="card-title mb-3">
-                                Virtual
+                                Derniers événements
                             </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta magnam similique modi
-                                totam
-                                eaque voluptate?
-                            </p>
+                            <ul>
+                                <li><a href="evenements.html">Evénement 1</a></li>
+                                <li><a href="evenements.html">Evénement 2</a></li>
+                                <li><a href="evenements.html">Evénement 3</a></li>
+                            </ul>
                             <a href="#" class="btn btn-primary">Lire...</a>
                         </div>
                     </div>
@@ -145,9 +175,10 @@
                         class="img-fluid">
                 </div>
                 <div class="col-md p-5">
-                    <h2>L'essentiel au sujet de ce chien</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus quae quisquam
-                        deserunt. Odio, iste!</p>
+                    <h2><strong>L'essentiel au sujet de ce chien</strong></h2>
+                    <p class="lead">Chien reconnu pour son excellence à la chasse ou en tant que chien policier
+                        renifleur de drogue mais aussi et surtout pour son intelligence et merveilleux caractère et
+                        sociabilité.</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem mollitia reiciendis accusamus iusto
                         maxime vero esse veniam molestias accusantium, aperiam odit, vel reprehenderit et quia nihil
                         illo deserunt est consequatur.</p>
@@ -161,7 +192,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-5">
-                    <h2>Le Springer-Spaniel de concours</h2>
+                    <h2><strong>Le Springer-Spaniel de concours</strong></h2>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus quae quisquam
                         deserunt. Odio, iste!</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem mollitia reiciendis accusamus iusto
@@ -175,12 +206,31 @@
             </div>
         </div>
     </section>
+    <section class="p-5" id="police">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img\DdtCEppV0AACMZi.jpg" alt="Springer-Spaniel chien policier" style="max-height:408px;"
+                        class="img-fluid">
+                </div>
+                <div class="col-md p-5">
+                    <h2><strong>Le Springer-Spaniel chien de police</strong></h2>
+                    <p class="lead">Adopté par la police et gendarmerie dans le monde entier, reconnu pour son flair
+                        ultra-dévelopé en matière de narcotiques.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem mollitia reiciendis accusamus iusto
+                        maxime vero esse veniam molestias accusantium, aperiam odit, vel reprehenderit et quia nihil
+                        illo deserunt est consequatur.</p>
+                    <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right"></i>Lire l'article...</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Accordion questions -->
     <section class="p-5" id="questions">
         <div class="container">
             <h2 class="text-center mb-4">
-                Questions fréquentes
+                Questions fréquentes (faq)
             </h2>
             <div class="accordion accordion-flush" id="accordionQuestions">
                 <div class="accordion-item">
@@ -192,9 +242,15 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionQuestions">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                            body.</div>
+                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+                            illo debitis, dolorem doloribus pariatur officiis repudiandae animi praesentium sapiente quo
+                            laudantium omnis suscipit, aut odit tempora hic corrupti tenetur molestiae!
+                            Enim dicta aut pariatur assumenda eveniet hic magni magnam nisi exercitationem quidem
+                            laudantium repellendus quo possimus ut tempore molestias itaque quis, ipsa ullam soluta
+                            dolor? Vel a deserunt amet sint!
+                            Labore molestias, error cupiditate enim obcaecati, rerum vitae maiores iure perspiciatis
+                            harum sint ratione distinctio deserunt? Quam laudantium, eligendi autem magni ab unde aut
+                            exercitationem, reiciendis error praesentium accusamus enim.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -206,9 +262,21 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionQuestions">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                            facere velit corporis dolores totam obcaecati a quam corrupti iste labore! Exercitationem
+                            natus recusandae et dolorum. Facilis animi odio delectus adipisci?
+                            Provident sapiente quia aliquid? Ducimus velit ullam, earum ipsam, reiciendis porro ea
+                            similique modi nesciunt deleniti neque numquam dolorum quas nobis suscipit cupiditate, cum
+                            voluptate qui! Perferendis vel est consectetur.
+                            Aut assumenda suscipit aliquid itaque nesciunt, quo ullam officia culpa voluptate soluta
+                            impedit. Totam eaque, eveniet consectetur blanditiis, esse saepe magni eius, ad a inventore
+                            odio repellat unde quisquam odit.
+                            Facilis similique excepturi, voluptatibus ea, nostrum, reprehenderit repellendus ad alias
+                            expedita velit sit iure distinctio qui vel facere fuga mollitia laudantium! Magni enim
+                            molestiae animi esse quae, accusantium expedita fugiat.
+                            Minima maxime nobis ad officiis? Numquam impedit animi minima officiis atque tenetur
+                            corrupti, libero quisquam esse distinctio omnis? Ratione animi minus nisi architecto ipsa
+                            deleniti eligendi tenetur itaque maxime eveniet!</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -221,11 +289,60 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionQuestions">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                            body. Nothing more exciting happening here in terms of content, but just filling up the
-                            space to make it look, at least at first glance, a bit more representative of how this would
-                            look in a real-world application.</div>
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+                            amet? Perferendis voluptate sequi facere accusamus molestiae perspiciatis. Blanditiis
+                            deserunt quam harum repudiandae est dolorum, assumenda aut eligendi consequuntur natus
+                            provident?
+                            Beatae itaque obcaecati officiis recusandae natus commodi libero mollitia, quam eaque vel
+                            laudantium neque necessitatibus blanditiis cum ut dolorem laboriosam ab veritatis eum
+                            aspernatur debitis soluta rem deleniti porro. Sunt.
+                            Natus quisquam libero iste omnis qui maiores nisi, cum hic excepturi corporis aliquid veniam
+                            quas vitae alias totam in eius, molestiae voluptatum. Inventore libero velit reprehenderit
+                            voluptatibus. Atque, aliquam ea.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Comment gérer son alimentation ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionQuestions">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+                            amet? Perferendis voluptate sequi facere accusamus molestiae perspiciatis. Blanditiis
+                            deserunt quam harum repudiandae est dolorum, assumenda aut eligendi consequuntur natus
+                            provident?
+                            Beatae itaque obcaecati officiis recusandae natus commodi libero mollitia, quam eaque vel
+                            laudantium neque necessitatibus blanditiis cum ut dolorem laboriosam ab veritatis eum
+                            aspernatur debitis soluta rem deleniti porro. Sunt.
+                            Natus quisquam libero iste omnis qui maiores nisi, cum hic excepturi corporis aliquid veniam
+                            quas vitae alias totam in eius, molestiae voluptatum. Inventore libero velit reprehenderit
+                            voluptatibus. Atque, aliquam ea.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Aime t'il les enfants ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionQuestions">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+                            amet? Perferendis voluptate sequi facere accusamus molestiae perspiciatis. Blanditiis
+                            deserunt quam harum repudiandae est dolorum, assumenda aut eligendi consequuntur natus
+                            provident?
+                            Beatae itaque obcaecati officiis recusandae natus commodi libero mollitia, quam eaque vel
+                            laudantium neque necessitatibus blanditiis cum ut dolorem laboriosam ab veritatis eum
+                            aspernatur debitis soluta rem deleniti porro. Sunt.
+                            Natus quisquam libero iste omnis qui maiores nisi, cum hic excepturi corporis aliquid veniam
+                            quas vitae alias totam in eius, molestiae voluptatum. Inventore libero velit reprehenderit
+                            voluptatibus. Atque, aliquam ea.</div>
                     </div>
                 </div>
             </div>
@@ -238,7 +355,8 @@
             <h2 class="text-center text-white">Nos modérateurs</h2>
             <p class="lead text-center text-white mb-5">
                 Nos modérateurs sont là pour veiller à ce que le contenu de ce site soit le plus pertinent possible...
-                <br>Chaque article / commentaire est vérifié avant et après publication.</p>
+                <br>Chaque article / commentaire est vérifié avant et après publication.
+            </p>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
@@ -306,39 +424,190 @@
     </section>
 
     <!-- Contact et carte -->
-    <section class="p-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md" id="contact">
+    <section class="p-5 d-flex justify-content-around">
+        <div class="container ">
+            <div class="row g-4 ">
+                <div class="col-md " id="contact">
                     <h2 class="text-center mb-4">Nous contacter</h2>
                     <ul class="list-group list-group-flush lead">
                         <li class="list-group-item">
-                            <span class="fw-bold">Siège social : 30 av de la Marne - 75017 Paris</span>                         
+                            <span class="fw-bold">Téléphone de contact : (+33) 1.45.45.45.45</span>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Téléphone de contact : (+33) 1.45.45.45.45</span>                         
+                            <span class="fw-bold">Siège social : 30 quai de la Marne - 75017 Paris</span>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Siège social : 30 av de la Marne - 75017 Paris</span>                         
+                            <span class="fw-bold">Bureaux : 30 quai de la Marne - 75017 Paris</span>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Siège social : 30 av de la Marne - 75017 Paris</span>                         
+                            <span class="fw-bold">Administration : 30 quai de la Marne - 75017 Paris</span>
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">Siège social : 30 av de la Marne - 75017 Paris</span>                         
+                            <span class="fw-bold">International : 30 quai de la Marne - 75017 Paris</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md">
-
+                <div class="col-md d-flex justify-content-end align-self-end">
+                    <iframe class="carte-google"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.325402098687!2d2.381555215947165!3d48.89013540642452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dce7d1423b9%3A0xf4366d5bc84832db!2s30%20Quai%20de%20la%20Marne%2C%2075019%20Paris!5e0!3m2!1sfr!2sfr!4v1673954750773!5m2!1sfr!2sfr"
+                        width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-5 text-white text-center position-relative">
+        <div class="container">
+            <div class="row links">
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
 
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                    </ul>
+                </div>
+                <div class="col d-flex align-items-center social-links">
+                    <ul>
+                        <li><i class="bi bi-twitter p-2"></i><a href="#">Twitter</a></li>
+                        <li><i class="bi bi-facebook p-2"></i><a href="#">Facebook</a></li>
+                        <li><i class="bi bi-instagram p-2"></i><a href="#">Instagram</a></li>
+                        <li><i class="bi bi-linkedin p-2"></i><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-3">
+                    <p class="lead">Copyright &copy; 2022 Leveque Emmanuel for STUDI</p>
+                    <a href="#" class="position-absolute bottom-0 end-0 p-5"><i
+                            class="bi bi-arrow-up-circle h1"></i></a>
+                </div>
             </div>
         </div>
 
-    </section>
+        <!-- Modal formulaire de connexion -->
+        <div class="modal fade" id="connectionModal" tabindex="-1" aria-labelledby="connectionModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="connectionModalLabel">Formulaire de connexion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-black text-left">
+                        <p class="lead">Veuillez remplir ce formulaire pour vous connecter</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="login" class="col-form-label">Email ou n° de telephone</label>
+                                <input type="text" class="form-control" id="login">
+                            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label">Mot de passe</label>
+                                <input type="text" class="form-control" id="password">
+                            </div>
+
+                            <div><a href="#">Mot de passe oublié ?</a></div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal formulaire confirmation d'abonnement aux newletters' -->
+        <div class="modal fade" id="newslettersModal" tabindex="-1" aria-labelledby="newslettersModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="newslettersModalLabel">Abonnement réussi !</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-black">
+                        <div>
+                            <p>Nous vous remercions, nous vous confirmons votre inscription à nos newletters à
+                                compter de la date d'aujourd'hui.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal formulaire d'inscription -->
+        <div class="modal fade" id="inscriptionModal" tabindex="-1" aria-labelledby="inscriptionModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="inscriptionModalLabel">Formulaire d'inscription</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-black">
+                        <p class="lead">Veuillez remplir ce formulaire pour devenir membre</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="firstname" class="col-form-label">Prénom</label>
+                                <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastname" class="col-form-label">Nom</label>
+                                <input type="text" class="form-control" id="lastname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label">Télephone</label>
+                                <input type="text" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label">Mot de passe</label>
+                                <input type="text" class="form-control" id="password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="col-form-label">Confirmer mot de passe</label>
+                                <input type="text" class="form-control" id="confirmPassword">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            </script>
+
 </body>

@@ -1,0 +1,29 @@
+    [
+        {
+            "id": "1",
+            "date": "25/10/2021",
+            "title": "Premier rassemblement",
+            "content": [
+                "<p>- Participez à notre premier rassemblement, faisons connaissance...</p>",
+                "<p>- Apéro et gôuter offerts, animaux bienvenus (si tenus en laisse... <i class='bi bi-emoji-wink'></i>)</p>"
+            ]
+        },
+        {
+            "id": "2",
+            "date": "25/11/2021",
+            "title": "Deuxième rassemblement",
+            "content": [
+                "<p>- Participez à notre premier rassemblement, faisons connaissance...</p>",
+                "<p>- Apéro et gôuter offerts, animaux bienvenus (si tenus en laisse... <i class='bi bi-emoji-wink'></i>)</p>"
+            ]
+        },
+        {
+            "id": "3",
+            "date": "25/10/2022",
+            "title": "Troisième rassemblement",
+            "content": [
+                "<p>- Participez à notre premier rassemblement, faisons connaissance...</p>",
+                "<p>- Apéro et gôuter offerts, animaux bienvenus (si tenus en laisse... <i class='bi bi-emoji-wink'></i>)</p>"
+            ]
+        }
+    ]

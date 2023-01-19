@@ -1,0 +1,80 @@
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta keywords="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Association Francaise des amateurs d'English-Springer-Spaniel</title>
+</head>
+
+<body>
+    <!-- Barre de navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-2 fixed-top">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand"><span class="text-primary h2">Association Française</span><span
+                    class="text-white h2"> des Amateurs de </span><span
+                    class="text-danger h2">Springer-Spaniel</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item h6">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid justify-content-center">
+            <div class="row bg-primary text-light mb-2 mt-0">
+                <div class="col-md-6 mx-auto">
+                    <h1>Tableau d'événements</h1>                    
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="row">
+                    <div class="col">
+                        <select name="triDateEvenement" id="triDateEvenement"> 
+                            <option value="">-- Trier par date --</option>
+                            <option value="1">Du plus ancien au plus récent</option>
+                            <option value="2">Du plus récent au plus ancien</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lien de retour à l'accueil -->
+            <div><a href="index.html" class="nav-link my-1 back-to-index">Revenir à l'accueil</a></div>
+
+            <!-- Tableau d'évènements (cards) -->
+            <div class="row g-4 news-list">
+            </div>
+
+
+            <!-- Lien de retour à l'accueil -->
+            <div><a href="index.html" class="nav-link my-1 back-to-index">Revenir à l'accueil</a></div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- Footer -->
+    <footer class="p-5 text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Leveque Emmanuel for STUDI</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+
+        </div>
+    </footer>
+    <script src="./js/evenements.js"></script>
+
+</body>
