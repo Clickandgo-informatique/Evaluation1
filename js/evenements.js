@@ -1,42 +1,23 @@
 let divNewsList = document.querySelector('.news-list')
 let selectTriDate = document.querySelector('#triDateEvenement')
 
-const lstEvenements = async () => {
-    var response = await fetch("./json/evenements.json")
-    var evts = await response.json()
-    afficherListeEvts(evts)
+window.onload = () => {
+    lstEvenements()
+        .then(evts => {
+            evts=evts.sort(triDateFrDesc)
+            afficherListeEvts(evts)
+        })
 }
-lstEvenements()
 
-selectTriDate.addEventListener('change', (evts) => {
-    lstEvenements(evts)
-    triParDate(evts)
-    afficherListeEvts(evts)
+const lstEvenements = async (evts) => {
+    let response = await fetch("./json/evenements.json")
+    evts = await response.json()
+    return evts
+}
+//Gestion du select permettant de classer par date
+selectTriDate.addEventListener('change', () => {
+    triParDate()
 })
-
-//Classe par date Française en ascendant ou descendant
-//suivant le choix utilisateur dans le select
-const triParDate = (evts) => {
-    if (selectTriDate.value == 1) {
-       evts = evts.sort(triDateFrDesc(evts))      
-       return evts
-    }
-    if (selectTriDate.value == 2) {
-       evts = evts.sort(triDateFrAsc(evts))
-        return evts          
-    }
-    function triDateFrDesc(a, b) {
-        dateA = new Date(a.date.split("/").reverse().join('-'));
-        dateB = new Date(b.date.split("/").reverse().join('-'));
-        return (dateA < dateB) ? 1 : -1;
-    }
-    
-    function triDateFrAsc(a, b) {
-        dateA = new Date(a.date.split("/").reverse().join('-'));
-        dateB = new Date(b.date.split("/").reverse().join('-'));
-        return (dateA > dateB) ? 1 : -1;
-    }
-}
 
 const afficherListeEvts = (evts) => {
     const html = evts.map(evt => {
@@ -60,4 +41,34 @@ const afficherListeEvts = (evts) => {
             </article>`
     })
     divNewsList.innerHTML = html
+}
+//Classe par date Française en ascendant ou descendant
+//suivant le choix utilisateur dans le select
+const triParDate = () => {
+    if (selectTriDate.value == 1) {
+        lstEvenements()
+            .then(evts => {
+                evts.sort(triDateFrDesc)
+                afficherListeEvts(evts)
+            })
+    }
+    if (selectTriDate.value == 2) {
+        lstEvenements()
+            .then(evts => {
+                evts.sort(triDateFrAsc)
+                afficherListeEvts(evts)
+            })
+    }
+}
+
+function triDateFrDesc(a, b) {
+    let dateA = new Date(a.date.split("/").reverse().join('-'));
+    let dateB = new Date(b.date.split("/").reverse().join('-'));
+    return (dateA < dateB) ? 1 : -1;
+}
+
+function triDateFrAsc(a, b) {
+    let dateA = new Date(a.date.split("/").reverse().join('-'));
+    let dateB = new Date(b.date.split("/").reverse().join('-'));
+    return (dateA > dateB) ? 1 : -1;
 }
