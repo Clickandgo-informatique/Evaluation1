@@ -1,0 +1,19 @@
+@media screen and(min-width:0px) {
+    .newsletter {
+        width: 50%;
+    }
+
+    .texte-logo h1 {
+        font-size: 8px;
+    }
+}
+
+@media screen and(min-width:1280px) {
+    .newsletter {
+        width: 50%;
+    }
+
+    .texte-logo h1 {
+        font-size: 20px;
+    }
+}
