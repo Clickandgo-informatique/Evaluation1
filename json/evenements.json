@@ -13,7 +13,7 @@
         "date": "25/11/2021",
         "title": "Deuxième rassemblement",
         "content": [
-            "<p>- Participez à notre premier rassemblement, faisons connaissance...</p>",
+            "<p>- Nous discuterons de nos liens avec d'autres associations...</p>",
             "<p>- Apéro et gôuter offerts, animaux bienvenus (si tenus en laisse... <i class='bi bi-emoji-wink'></i>)</p>"
         ]
     },
@@ -22,7 +22,34 @@
         "date": "25/10/2022",
         "title": "Troisième rassemblement",
         "content": [
-            "<p>- Participez à notre premier rassemblement, faisons connaissance...</p>",
+            "<p>- Participez à notre deuxième rassemblement, faisons plus ample connaissance...</p>",
+            "<p>- Apéro et gôuter offerts, animaux bienvenus (si tenus en laisse... <i class='bi bi-emoji-wink'></i>)</p>"
+        ]
+    },
+    {
+        "id": "4",
+        "date": "06/03/2017",
+        "title": "Reportage TF1",
+        "content": [
+            "<p>- La chaîne TF1 fait un reportage sur L'AFASP !</p>",
+            "<p>- Le reportage sera bientôt sous format vidéo téléchargeable pour tous nos membres !</p>"
+        ]
+    },
+    {
+        "id": "5",
+        "date": "01/04/2015",
+        "title": "Présentation activités",
+        "content": [
+            "<p>- Première réunion des membres, faisons connaissance...</p>",
+            "<p>- Présentation de nos activités à tous les membres</p>"
+        ]
+    },
+    {
+        "id": "6",
+        "date": "12/10/2010",
+        "title": "Naissance de notre association",
+        "content": [
+            "<p>- C'est le grand jour ! C'est officiel, L'AFASP est déclarée association  loi 1901...</p>",
             "<p>- Apéro et gôuter offerts, animaux bienvenus (si tenus en laisse... <i class='bi bi-emoji-wink'></i>)</p>"
         ]
     }

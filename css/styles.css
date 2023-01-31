@@ -4,7 +4,7 @@
 :root {
     --primary-color: rgb(234, 234, 234);
     --secondary-color: rgb(204, 204, 204);
-    --box-shadow:2px 2px 8px 4px rgba(99, 99, 99, 0.2);
+    --box-shadow:2px 2px 8px 4px rgba(72, 72, 72, 0.2);
     --text-title: rgb(94, 94, 94);
     --text-primary-color: rgb(49, 49, 49); 
 }
@@ -69,7 +69,7 @@ display:flex;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    padding: 5px;
+    padding: 12px;
 }
 
 .card {
@@ -116,8 +116,6 @@ display:flex;
     z-index: 10;
     align-items: center;
     justify-content: center;
-    transition: ease-in-out linear 3s;
-    transform: translateY(0, 100%);
     box-shadow: var(--box-shadow);
 }
 
@@ -169,6 +167,7 @@ footer {
 
 footer ul li {
     list-style: none;
+    margin-left: 25px;
 }
 
 footer ul li a:hover {

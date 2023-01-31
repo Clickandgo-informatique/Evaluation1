@@ -23,7 +23,7 @@ const afficherListeEvts = (evts) => {
     const html = evts.map(evt => {
         return `<article>
             <div class="col-md-6 mx-auto">
-            <div class="card bg-light text-black">
+            <div class="card bg-white text-black">
             <div class="card-body">
             <div class="container d-flex justify-content-start date-news">
             <p class="card-title mb-3 news-date text-left mx-1">
@@ -33,7 +33,7 @@ const afficherListeEvts = (evts) => {
             <h5 class="text-primary">${evt.title}</h5> 
             <div class="card-text">${evt.content.join('')}</div>                                
             <div class="text-center">
-            <a href="#" class="btn btn-primary mt-2">Voir plus ...</a>
+            <a href="#" class="btn btn-gray m-3">Voir plus ...</a>
             </div>
             </div>
             </div>

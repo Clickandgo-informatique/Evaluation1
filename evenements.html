@@ -14,48 +14,60 @@
 
 <body>
     <!-- Barre de navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark py-2 fixed-top">
-        <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand"><span class="text-primary h2">Association Française</span><span
-                    class="text-white h2"> des Amateurs de </span><span
-                    class="text-danger h2">Springer-Spaniel</span></a>
+    <nav class="navbar navbar-expand-lg navbar-light py-2 fixed-top box-shadow">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="col d-flex texte-initiales-logo d-block d-sm-none">
+                <h2 class="d-flex align-items-center text-white h2">AFASP</h2>
+            </div>
+            <div class="col d-flex align-items-center texte-logo d-none d-sm-block">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <h1 class="text-Shadow">
+                        <span class="text-primary">Association Française</span>
+                        <span class="text-white"> des Amateurs de </span>
+                        <span class="text-danger">Springer-Spaniel</span>
+                    </h1>
+                </a>
+            </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button class="navbar-toggler text-white border-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center d-flex">    
+
+                    <!-- Lien de retour à l'accueil -->
                     <li class="nav-item h6">
-                        <a href="index.html" class="nav-link">Accueil</a>
+                            <a href="index.html" class="nav-link my-1 back-to-index text-darkgray"><i class="bi bi-house m-2 text-white"></i>Revenir à l'accueil</a>                        
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <main>
-        <div class="container-fluid justify-content-center">
-            <div class="row bg-primary text-light mb-2 mt-0">
-                <div class="col-md-6 mx-auto">
-                    <h1>Tableau d'événements</h1>                    
+        <div class="container">
+            <div class="row d-flex text-primary mb-5 mt-2">
+                <div class="col-md d-flex p-2 justify-content-center">
+                    <h1 class="titre-tableau-evenements" id="titre-tableau-evenements">Tableau d'événements</h1>
                 </div>
             </div>
+
+            <!-- Choix par select de tri sur liste d'événements -->
             <div class="container-fluid d-flex justify-content-center">
                 <div class="row">
                     <div class="col">
-                        <select name="triDateEvenement" id="triDateEvenement"> 
+                        <select class="p-2 mb-3 bg-lightgray text-lightgray" name="triDateEvenement" id="triDateEvenement">
                             <option value="">-- Trier par date --</option>
                             <option value="2">Du plus ancien au plus récent</option>
                             <option value="1">Du plus récent au plus ancien</option>
                         </select>
                     </div>
                 </div>
-            </div>
+            </div>       
 
-            <!-- Lien de retour à l'accueil -->
-            <div><a href="index.html" class="nav-link my-1 back-to-index">Revenir à l'accueil</a></div>
-
-            <!-- Tableau d'évènements (cards) -->
+            <!-- Tableau d'évènements (cards) extrait du fichier evenements.json -->
             <div class="row g-4 news-list">
             </div>
 
@@ -64,17 +76,72 @@
             <div><a href="index.html" class="nav-link my-1 back-to-index">Revenir à l'accueil</a></div>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+
     <!-- Footer -->
     <footer class="p-5 text-white text-center position-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy; 2022 Leveque Emmanuel for STUDI</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+        <footer class="text-center box-shadow d-flex flex-column align-items-center">
+            <div class="container-fluid">
+                <div class="row p-5 d-flex justify-content-center">
+                    <div class="col-md-2">
+                        <ul class="links-footer">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="links-footer">
+                            <li><a href="#">Link 5</a></li>
+                            <li><a href="#">Link 6</a></li>
+                            <li><a href="#">Link 7</a></li>
+                            <li><a href="#">Link 8</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="links-footer">
+                            <li><a href="#">Link 9</a></li>
+                            <li><a href="#">Link 10</a></li>
+                            <li><a href="#">Link 11</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                        role="button"><i class="bi bi-facebook"></i></a>
 
-        </div>
-    </footer>
-    <script src="./js/evenements.js" type="module"></script>
+                    <!-- Twitter -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
+                        role="button"><i class="bi bi-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                        role="button"><i class="bi bi-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                        role="button"><i class="bi bi-instagram"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © Copyright 2023 : Leveque Emmanuel for STUDI
+            </div>
+            <!-- Bouton retour top page -->
+            <a href="#titre-tableau-evenements"><i class="bi bi-arrow-up-circle h1"></i></a>
+        </footer>
+
+        <script src="./js/evenements.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            </script>
 
 </body>
