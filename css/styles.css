@@ -1,38 +1,47 @@
-/*Variables*/
 @import "./media-queries.css";
+@import "./animations.css";
 
+/*Variables*/
 :root {
     --primary-color: rgb(234, 234, 234);
     --secondary-color: rgb(204, 204, 204);
-    --box-shadow:2px 2px 8px 4px rgba(72, 72, 72, 0.2);
+    --box-shadow: 2px 2px 8px 4px rgba(72, 72, 72, 0.2);
+    --text-shadow: 2px -1px 2px rgba(0, 0, 0,0.5);
     --text-title: rgb(94, 94, 94);
-    --text-primary-color: rgb(49, 49, 49); 
+    --text-primary-color: rgb(49, 49, 49);
 }
-.accordion{
+
+.accordion {
     box-shadow: var(--box-shadow);
 }
-.bienvenue{
-    color:var(--text-title)
+
+.bienvenue {
+    color: var(--text-title)
 }
+
 body {
     background-color: #f4f4f4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:var(--text-primary-color);
+    color: var(--text-primary-color);
 }
+
 h5,
 p,
-.lien-partage span{
-    color:var(--text-primary-color)
+.lien-partage span {
+    color: var(--text-primary-color)
 }
+
 body::before {
     display: block;
     content: '';
     height: 60px;
 }
-ul{
+
+ul {
     margin-left: 0;
     padding: 0;
 }
+
 .navbar {
     background-color: var(--secondary-color);
 }
@@ -40,8 +49,9 @@ ul{
 p {
     margin-bottom: 2px;
 }
-h2{
-    color:var(--text-title)
+
+h2 {
+    color: var(--text-title)
 }
 
 .back-to-index {
@@ -55,21 +65,27 @@ h2{
 
 footer {
     background-color: var(--secondary-color);
-    
+
 }
 
-footer ul li a{
-color:var(--text-title);
-display:flex;
+footer ul li a {
+    color: var(--text-title);
+    display: flex;
 }
-.btn{
+
+.btn {
     box-shadow: var(--box-shadow);
 }
+
 .btn-floating {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     padding: 12px;
+}
+.btn-floating:hover{
+    transform:scale(155%);
+    margin-right:-55px;   
 }
 
 .card {
@@ -97,7 +113,7 @@ display:flex;
     color: #000;
 }
 
-.contact-links{
+.contact-links {
     box-shadow: var(--box-shadow);
 }
 
@@ -107,7 +123,7 @@ display:flex;
     height: auto;
     bottom: 0;
     width: 100%;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(169, 169, 169);
     color: rgb(89, 89, 89);
     padding: 5px;
     position: fixed;
@@ -116,7 +132,7 @@ display:flex;
     z-index: 10;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow); 
 }
 
 .cookies-banner-fr button {
@@ -136,18 +152,21 @@ display:flex;
 .cookies-banner-fr button:hover {
     background: #fff;
     color: #222;
-    transform:scale(110%);
+    transform: scale(110%);
 }
 
 .img-fluid {
     border-radius: 10px;
 }
-.img-section{
+
+.img-section {
     box-shadow: var(--box-shadow);
 }
+
 .img-cookie {
     border-radius: 10px;
 }
+
 .hidden {
     display: none;
 }
@@ -172,7 +191,7 @@ footer ul li {
 
 footer ul li a:hover {
     color: goldenrod;
-
+    transform:scaleY(160%)
 }
 
 ul li a {
@@ -180,8 +199,50 @@ ul li a {
     text-decoration: none;
 }
 
+.lien-partage i{
+    background: #ffffff;
+    border-radius: 50%;
+    padding:3%;   
+    box-shadow: var(--box-shadow);
+    color:var(--text-primary-color);  
+}
+
 .texte-logo h1 {
     font-size: 25px;
     font-weight: 700;
+    text-shadow: var(--text-shadow);
+}
+.text-shadow{
+    text-shadow: var(--text-shadow);
 }
 
+.news-title{
+    background: #a8a8a8;
+    padding:8px;
+    border-radius: 5px;
+}
+
+.card-text{
+    margin-left: 10px;
+}
+.news-content{
+    background-color: rgb(229, 229, 229);
+    padding:5px;
+    border-radius: 5px;      
+}
+
+.news-content p{
+    margin-left: 30px;
+    line-height: 35px;
+    color:var(--text-title)
+}
+
+.triDateEvenement{
+    background: rgb(168, 168, 168);
+    border-radius: 5px;
+    color:rgb(240, 240, 240);
+    text-align: center;
+    border: 3px solid rgb(228, 228, 228);
+    box-shadow: var(--box-shadow);
+    padding: 5px;
+}

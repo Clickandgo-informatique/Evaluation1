@@ -22,24 +22,23 @@ selectTriDate.addEventListener('change', () => {
 const afficherListeEvts = (evts) => {
     const html = evts.map(evt => {
         return `<article>
-            <div class="col-md-6 mx-auto">
+            <div class="col-md-6 mx-auto fadeIn">
             <div class="card bg-white text-black">
             <div class="card-body">
-            <div class="container d-flex justify-content-start date-news">
-            <p class="card-title mb-3 news-date text-left mx-1">
-            <i class="bi bi-calendar3 my-auto"></i>&nbsp;&nbsp;${evt.date}</p>
+            <div class="container d-flex justify-content-between align-items-center news-title mb-2">      
+            <h5 class="text-white text-shadow text-left mb-0">${evt.title}</h5> 
+            <h6 class="text-white mb-0 mr-3 d-flex text-shadow"><i class="bi bi-calendar3 my-auto text-right text-white"></i>&nbsp;&nbsp;${evt.date}</h6>
             </div>
-            <div class="container">
-            <h5 class="text-primary">${evt.title}</h5> 
-            <div class="card-text">${evt.content.join('')}</div>                                
+            <div class="container news-content">
+            <div class="card-text mx-3 my-3"><p class="news-content">${evt.content.join(' ')}</p></div>                                
             <div class="text-center">
-            <a href="#" class="btn btn-gray m-3">Voir plus ...</a>
+            <a href="#" class="btn bg-white m-3">Voir plus ...</a>
             </div>
             </div>
             </div>
             </div>
             </article>`
-    })
+    }).join(' ')
     divNewsList.innerHTML = html
 }
 //Classe par date Française en ascendant ou descendant
