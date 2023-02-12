@@ -4,7 +4,11 @@ const cookiesBannerDeclineButton = document.querySelector('.decline-cookies')
 const cookieName = 'cookiesBanner'
 
 window.onload = () => {
+    //Annule momentanément le scrolling
+    disableBodyScroll()
     //Affiche le banner de cookies si cookie inexistant
+    cookiesBanner.classList.remove('closing')
+    cookiesBanner.classList.add('opening')
     const hasCookie = getCookie(cookieName)
     if (!hasCookie) {
         cookiesBanner.classList.remove('hidden')
@@ -17,20 +21,31 @@ cookiesBannerAcceptButton.addEventListener('click', () => {
     setCookie(cookieName, 'closed')
     cookiesBanner.classList.remove('fadeIn')
     cookiesBanner.classList.add('fadeOut')
+    cookiesBanner.classList.remove('opening')
+    cookiesBanner.classList.add('closing')
+    
     //fait dispraître le banner de cookies après le fadeOut
-    setTimeout(()=>{
-        cookiesBanner.remove()
-    },1500)
+
+        enableBodyScroll()
+
+        setTimeout(()=>{
+            cookiesBanner.remove()
+        },2000)
+
 })
 
 //Fermeture du banner de cookies si refus
 cookiesBannerDeclineButton.addEventListener('click', () => {
+    enableBodyScroll()
     cookiesBanner.classList.remove('fadeIn')
+    cookiesBanner.classList.remove('opening')
     cookiesBanner.classList.add('fadeOut')
+    cookiesBanner.classList.add('closing')
     //fait disparaître le banner de cookies après le fadeOut
+    // et autorise le scrolling
     setTimeout(() => {
         cookiesBanner.remove()
-    }, 1500)
+    }, 2000)
 })
 
 
@@ -55,4 +70,15 @@ const setCookie = function (name, value, expiryDays, domain, path, secure) {
         (path || "/") +
         (domain ? ";domain=" + domain : "") +
         (secure ? ";secure" : "")
+}
+
+//Annuler scrolling + blurring du wrapper
+const el = document.querySelector(".wrapper");
+function disableBodyScroll() {
+    el.classList.add("stop-scroll");    
+}
+
+function enableBodyScroll() {
+   
+    el.classList.remove("stop-scroll");
 }

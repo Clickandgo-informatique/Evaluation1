@@ -6,7 +6,7 @@
     --primary-color: rgb(234, 234, 234);
     --secondary-color: rgb(204, 204, 204);
     --box-shadow: 2px 2px 8px 4px rgba(72, 72, 72, 0.2);
-    --text-shadow: 2px -1px 2px rgba(0, 0, 0,0.5);
+    --text-shadow: 2px -1px 2px rgba(0, 0, 0, 0.5);
     --text-title: rgb(94, 94, 94);
     --text-primary-color: rgb(49, 49, 49);
 }
@@ -83,9 +83,10 @@ footer ul li a {
     border-radius: 50%;
     padding: 12px;
 }
-.btn-floating:hover{
-    transform:scale(155%);
-    margin-right:-55px;   
+
+.btn-floating:hover {
+    transform: scale(155%);
+    margin-right: -55px;
 }
 
 .card {
@@ -132,7 +133,8 @@ footer ul li a {
     z-index: 10;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--box-shadow); 
+    box-shadow: var(--box-shadow);
+    filter: blur(0);
 }
 
 .cookies-banner-fr button {
@@ -147,6 +149,17 @@ footer ul li a {
     transition: background 0.07s, color 0.07s, border-color 0.07s;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.contact-link {
+    font-size: small;
+    padding: 5px;
+    text-align: right;
+}
+
+.contact-title {
+    font-size: small;
+    width: fit-content;
 }
 
 .cookies-banner-fr button:hover {
@@ -191,7 +204,7 @@ footer ul li {
 
 footer ul li a:hover {
     color: goldenrod;
-    transform:scaleY(160%)
+    transform: scaleY(160%)
 }
 
 ul li a {
@@ -199,12 +212,12 @@ ul li a {
     text-decoration: none;
 }
 
-.lien-partage i{
+.lien-partage i {
     background: #ffffff;
     border-radius: 50%;
-    padding:3%;   
+    padding: 3%;
     box-shadow: var(--box-shadow);
-    color:var(--text-primary-color);  
+    color: var(--text-primary-color);
 }
 
 .texte-logo h1 {
@@ -212,37 +225,46 @@ ul li a {
     font-weight: 700;
     text-shadow: var(--text-shadow);
 }
-.text-shadow{
+
+.text-shadow {
     text-shadow: var(--text-shadow);
 }
 
-.news-title{
+.news-title {
     background: #a8a8a8;
-    padding:8px;
+    padding: 8px;
     border-radius: 5px;
 }
 
-.card-text{
+.card-text {
     margin-left: 10px;
 }
-.news-content{
+
+.news-content {
     background-color: rgb(229, 229, 229);
-    padding:5px;
-    border-radius: 5px;      
+    padding: 5px;
+    border-radius: 5px;
 }
 
-.news-content p{
+.news-content p {
     margin-left: 30px;
     line-height: 35px;
-    color:var(--text-title)
+    color: var(--text-title)
 }
 
-.triDateEvenement{
+.triDateEvenement {
     background: rgb(168, 168, 168);
     border-radius: 5px;
-    color:rgb(240, 240, 240);
+    color: rgb(240, 240, 240);
     text-align: center;
     border: 3px solid rgb(228, 228, 228);
     box-shadow: var(--box-shadow);
     padding: 5px;
+}
+
+.stop-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(4px);
 }

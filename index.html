@@ -33,34 +33,35 @@
                         </h1>
                     </a>
                 </div>
-
+                
                 <button class="navbar-toggler text-white border-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto align-items-center d-flex">
-                        <li class="nav-item h6">
-                            <a href="evenements.html" class="nav-link text-white text-shadow"><i class="bi bi-calendar mx-2"></i>Evénements</a>
-                        </li>
-
-                        </li>
-                        <li class="nav-item h6">
-                            <a href="#contact" class="nav-link text-white text-shadow"><i class="bi bi-envelope mx-2"></i>Contact</a>
-                        </li>
-
-                        <li class="nav-item h6">
-                            <a href="#connexion" class="nav-link text-white text-shadow" data-bs-toggle="modal"
-                                data-bs-target="#connectionModal"><i class="bi bi-box-arrow-in-right mx-2"></i>Se
-                                connecter</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Principal -->
-        <section class="text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="principal">
+                data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="wrapper">
+            
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto align-items-center d-flex">
+                    <li class="nav-item h6">
+                        <a href="evenements.html" class="nav-link text-white text-shadow"><i class="bi bi-calendar mx-2"></i>Evénements</a>
+                    </li>
+                    
+                </li>
+                <li class="nav-item h6">
+                    <a href="#contact" class="nav-link text-white text-shadow"><i class="bi bi-envelope mx-2"></i>Contact</a>
+                </li>
+                
+                <li class="nav-item h6">
+                    <a href="#connexion" class="nav-link text-white text-shadow" data-bs-toggle="modal"
+                    data-bs-target="#connectionModal"><i class="bi bi-box-arrow-in-right mx-2"></i>Se
+                    connecter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Principal -->
+<section class="text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="principal">
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
@@ -486,23 +487,23 @@
         <section class="p-5 d-flex justify-content-around">
             <div class="container ">
                 <div class="row g-4 ">
-                    <div class="col-md " id="contact">
+                    <div class="col-md contact" id="contact">
                         <h2 class="text-center mb-4">Nous contacter</h2>
-                        <ul class="list-group list-group-flush lead contact-links">
-                            <li class="list-group-item justify-content-between d-flex">
-                                <span class="fw-bold">Téléphone de contact : </span><span>(+33) 1.45.45.45.45</span>
+                        <ul class="list-group list-group-flush contact-links p-2 d-flex">
+                            <li class="list-group-item justify-content-between d-flex ml-5 mr-0">
+                                <span class="fw-bold contact-title">Téléphone de contact : </span><span class="contact-link">(+33) 1.45.45.45.45</span>
                             </li>
-                            <li class="list-group-item justify-content-between d-flex">
-                                <span class="fw-bold">Siège social : </span><span> 30 quai de la Marne - 75017 Paris</span>
+                            <li class="list-group-item justify-content-between ml-5 d-flex mr-0">
+                                <span class="fw-bold contact-title">Siège social : </span><span class="contact-link"> 30 quai de la Marne - 75017 Paris</span>
                             </li>
-                            <li class="list-group-item justify-content-between d-flex">
-                                <span class="fw-bold">Bureaux : </span><span>30 quai de la Marne - 75017 Paris</span>
+                            <li class="list-group-item justify-content-between ml-5 d-flex">
+                                <span class="fw-bold contact-title">Bureaux : </span><span class="contact-link">30 quai de la Marne - 75017 Paris</span>
                             </li>
-                            <li class="list-group-item justify-content-between d-flex">
-                                <span class="fw-bold">Administration : </span><span>30 quai de la Marne - 75017 Paris</span>
+                            <li class="list-group-item justify-content-between ml-5 d-flex">
+                                <span class="fw-bold contact-title">Administration : </span><span class="contact-link">30 quai de la Marne - 75017 Paris</span>
                             </li>
-                            <li class="list-group-item justify-content-between d-flex">
-                                <span class="fw-bold">International : </span><span>30 quai de la Marne - 75017 Paris</span>
+                            <li class="list-group-item justify-content-between ml-5 d-flex">
+                                <span class="fw-bold contact-title">International : </span><span class="contact-link">30 quai de la Marne - 75017 Paris</span>
                             </li>
                         </ul>
                     </div>
@@ -686,6 +687,8 @@
                 </div>
             </div>
         </div>
+        </div><!-- Fin du wrapper -->
+
         <!--Banner cookies-->
         <div class="container-fluid cookies-banner-fr hidden p-3">
             <div class="row justify-content-around">
