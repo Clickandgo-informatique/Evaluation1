@@ -72,7 +72,7 @@ const setCookie = function (name, value, expiryDays, domain, path, secure) {
         (secure ? ";secure" : "")
 }
 
-//Annuler scrolling + blurring du wrapper
+//Annuler scrolling du wrapper
 const el = document.querySelector(".wrapper");
 function disableBodyScroll() {
     el.classList.add("stop-scroll");    

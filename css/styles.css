@@ -46,6 +46,11 @@ ul {
     background-color: var(--secondary-color);
 }
 
+.nav-link:hover{
+    transform:scale(120%);
+    color:#000;
+}
+
 p {
     margin-bottom: 2px;
 }
@@ -155,6 +160,8 @@ footer ul li a {
     font-size: small;
     padding: 5px;
     text-align: right;
+    color:#222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact-title {
@@ -265,6 +272,10 @@ ul li a {
 .stop-scroll {
     margin: 0;
     height: 100%;
-    overflow: hidden;
-    filter: blur(4px);
+    overflow: hidden;   
+}
+
+.email{
+font-size: 14px;
+color:black;
 }
