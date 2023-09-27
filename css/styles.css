@@ -238,7 +238,7 @@ ul li a {
 }
 
 .news-title {
-    background: #a8a8a8;
+    background: #8c8c8c;
     padding: 8px;
     border-radius: 5px;
 }
@@ -248,7 +248,7 @@ ul li a {
 }
 
 .news-content {
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(245, 245, 245);
     padding: 5px;
     border-radius: 5px;
 }
