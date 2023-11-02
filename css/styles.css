@@ -3,279 +3,295 @@
 
 /*Variables*/
 :root {
-    --primary-color: rgb(234, 234, 234);
-    --secondary-color: rgb(204, 204, 204);
-    --box-shadow: 2px 2px 8px 4px rgba(72, 72, 72, 0.2);
-    --text-shadow: 2px -1px 2px rgba(0, 0, 0, 0.5);
-    --text-title: rgb(94, 94, 94);
-    --text-primary-color: rgb(49, 49, 49);
+  --primary-color: rgb(234, 234, 234);
+  --secondary-color: rgb(204, 204, 204);
+  --box-shadow: 2px 2px 8px 4px rgba(72, 72, 72, 0.2);
+  --text-shadow: 2px -1px 2px rgba(0, 0, 0, 0.2);
+  --text-title: rgb(52, 52, 183);
+  --text-primary-color: rgb(49, 49, 49);
 }
-
+ul li a:visited {
+  color: darkblue;
+}
 .accordion {
-    box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .bienvenue {
-    color: var(--text-title)
+  color: var(--text-title);
 }
 
 body {
-    background-color: #f4f4f4;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--text-primary-color);
+  background-color: #f4f4f4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text-primary-color);
 }
 
 h5,
 p,
 .lien-partage span {
-    color: var(--text-primary-color)
+  color: var(--text-primary-color);
 }
 
 body::before {
-    display: block;
-    content: '';
-    height: 60px;
+  display: block;
+  content: "";
+  height: 60px;
 }
 
 ul {
-    margin-left: 0;
-    padding: 0;
+  margin-left: 0;
+  padding: 0;
 }
 
 .navbar {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
-.nav-link:hover{
-    transform:scale(120%);
-    color:#000;
+.nav-link {
+  color: blue;
+}
+.nav-link:hover {
+  transform: scale(110%);
+  color: darkblue;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 p {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 h2 {
-    color: var(--text-title)
+  color: var(--text-title);
 }
 
 .back-to-index {
-    color: darkgray;
-    text-decoration: solid black 1px;
+  color: blue;
 }
 
 .back-to-index:hover {
-    color: red;
+  color: darkblue;
+  text-decoration: 1px solid blue;
 }
 
 footer {
-    background-color: var(--secondary-color);
-
+  background-color: var(--secondary-color);
 }
 
 footer ul li a {
-    color: var(--text-title);
-    display: flex;
+  color: var(--text-title);
+  display: flex;
 }
 
 .btn {
-    box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .btn-floating {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
 }
 
 .btn-floating:hover {
-    transform: scale(155%);
-    margin-right: -55px;
+  transform: scale(155%);
+  margin-right: -55px;
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    box-shadow: var(--box-shadow);
-}
-
-.card-title {
-    color: var(--text-title);
+  display: flex;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
 }
 
 .card ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card ul li {
-    list-style: none;
-    text-align: left;
+  list-style: none;
+  text-align: left;
 }
-
+.card-title {
+  color: rgb(81, 81, 255);
+  font-size: 1.2rem;
+}
 .card ul li a {
-    color: #000;
+  color: #000;
 }
 
 .contact-links {
-    box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .cookies-banner-fr {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(169, 169, 169);
-    color: rgb(89, 89, 89);
-    padding: 5px;
-    position: fixed;
-    font-size: 17px;
-    text-align: justify;
-    z-index: 10;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--box-shadow);
-    filter: blur(0);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(169, 169, 169);
+  color: rgb(89, 89, 89);
+  padding: 5px;
+  position: fixed;
+  font-size: 17px;
+  text-align: justify;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  filter: blur(0);
 }
 
 .cookies-banner-fr button {
-    text-decoration: none;
-    background: rgb(128, 128, 128);
-    color: #fff;
-    border: 1px solid rgb(123, 123, 123);
-    padding: 4px 7px;
-    margin: 10px 7px;
-    font-size: 16px;
-    font-weight: normal;
-    transition: background 0.07s, color 0.07s, border-color 0.07s;
-    border-radius: 5px;
-    cursor: pointer;
+  text-decoration: none;
+  background: rgb(128, 128, 128);
+  color: #fff;
+  border: 1px solid rgb(123, 123, 123);
+  padding: 4px 7px;
+  margin: 10px 7px;
+  font-size: 16px;
+  font-weight: normal;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .contact-link {
-    font-size: small;
-    padding: 5px;
-    text-align: right;
-    color:#222;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  padding: 5px;
+  text-align: right;
+  color: #222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact-title {
-    font-size: small;
-    width: fit-content;
+  font-size: small;
+  width: fit-content;
 }
 
 .cookies-banner-fr button:hover {
-    background: #fff;
-    color: #222;
-    transform: scale(110%);
+  background: #fff;
+  color: #222;
+  transform: scale(110%);
 }
 
 .img-fluid {
-    border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
 }
 
 .img-section {
-    box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .img-cookie {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #principal,
 #moderateurs {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .carte-google {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 footer {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 footer ul li {
-    list-style: none;
-    margin-left: 25px;
+  list-style: none;
+  margin-left: 25px;
 }
-
-footer ul li a:hover {
-    color: goldenrod;
-    transform: scaleY(160%)
-}
-
 ul li a {
-    color: white;
-    text-decoration: none;
+  text-decoration: none;
+  color: darkblue;
+}
+ul li a:hover {
+  transform: scale(110%);
+  text-decoration: underline;
+  color: blue;
 }
 
+.card-body ul li a {
+  color: darkblue;
+  text-decoration: none;
+}
 .lien-partage i {
-    background: #ffffff;
-    border-radius: 50%;
-    padding: 3%;
-    box-shadow: var(--box-shadow);
-    color: var(--text-primary-color);
+  background-color: blue;
+  border-radius: 50%;
+  padding: 3%;
+  box-shadow: var(--box-shadow);
+  color: #fff;
 }
 
 .texte-logo h1 {
-    font-size: 25px;
-    font-weight: 700;
-    text-shadow: var(--text-shadow);
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: var(--text-shadow);
 }
 
 .text-shadow {
-    text-shadow: var(--text-shadow);
+  text-shadow: var(--text-shadow);
 }
 
 .news-title {
-    background: #8c8c8c;
-    padding: 8px;
-    border-radius: 5px;
+  background: #0d6efd;
+  padding: 8px;
+  border-radius: 5px;
+  padding: 10px 25px;
 }
-
+.news-title h5 {
+  font-size: 1rem;
+}
 .card-text {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .news-content {
-    background-color: rgb(245, 245, 245);
-    padding: 5px;
-    border-radius: 5px;
+  background-color: rgb(247, 247, 247);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .news-content p {
-    margin-left: 30px;
-    line-height: 35px;
-    color: var(--text-title)
+  margin-left: 30px;
+  line-height: 35px;
+  color: var(--text-title);
 }
 
 .triDateEvenement {
-    background: rgb(168, 168, 168);
-    border-radius: 5px;
-    color: rgb(240, 240, 240);
-    text-align: center;
-    border: 3px solid rgb(228, 228, 228);
-    box-shadow: var(--box-shadow);
-    padding: 5px;
+  background: #0d6efd;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid blue;
+  box-shadow: var(--box-shadow);
+  padding: 15px 10px;
 }
 
 .stop-scroll {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;   
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-.email{
-font-size: 14px;
-color:black;
+.email {
+  font-size: 14px;
+  color: black;
+}
+.link-icon {
+  color: blue;
+  text-shadow: var(--text-shadow);
 }

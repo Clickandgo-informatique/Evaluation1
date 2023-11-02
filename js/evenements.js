@@ -32,7 +32,7 @@ const afficherListeEvts = (evts) => {
             <div class="container news-content">
             <div class="card-text mx-3 my-3"><p class="news-content">${evt.content.join(' ')}</p></div>                                
             <div class="text-center">
-            <a href="#" class="btn bg-white m-3">Voir plus ...</a>
+            <a href="#" class="btn bg-primary text-white m-3">Voir plus ...</a>
             </div>
             </div>
             </div>
